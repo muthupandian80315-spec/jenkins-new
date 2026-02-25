@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo 'Deploying to Apache server'
                 sh ' cp index.html /var/www/html/index.html'
-                sh ' sudo systemctl restart apache2'
+                sh ' sudo -n systemctl restart apache2'
             }
         }
     }
