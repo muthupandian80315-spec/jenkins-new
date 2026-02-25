@@ -13,8 +13,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying to Apache server'
-                sh 'sudo cp index.html /var/www/html/index.html'
-                sh 'sudo systemctl restart apache2'
+                sh ' cp index.html /var/www/html/index.html'
+                sh ' systemctl restart apache2'
             }
         }
     }
